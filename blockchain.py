@@ -157,7 +157,9 @@ class Blockchain:
                 # f.write(pickle.dumps(save_data))
         except IOError:
             print('Saving failed!')
-
+            
+            
+    # replace with a dag. Make user pick parent for its new data entry. Proof of Authority???   
     def proof_of_work(self):
         """Generate a proof of work for the open transactions, the hash of the
         previous block and a random number (which is guessed until it fits)."""
